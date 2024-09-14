@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../CSS/owl.theme.default.min.css">
     <link rel="stylesheet" href="../Fonts/flaticon-1/font/flaticon.css">
     <link rel="stylesheet" href="../CSS/aos.css">
+    <link rel="stylesheet" href="../CSS/app.css">
 
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
@@ -48,21 +49,7 @@
       
       
       
-      <div class="bg-primary py-3 top-bar shadow d-none d-md-block">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 text-md-left pl-0">
-              <a href="#" class=" pr-3 pl-0">Home</a>
-              <a href="#" class="p-3">Events</a>
-              <a href="#" class="p-3">Become A Volunteer</a>
-            </div>
-            <div class="col-md-6 text-md-right">
-              <a href="#" class="p-3"><span class="icon-twitter"></span></a>
-              <a href="#" class="p-3"><span class="icon-facebook"></span></a>
-            </div>
-          </div>
-        </div>
-      </div>
+      
       <header class="site-navbar site-navbar-target bg-secondary shadow" role="banner">
 
         <div class="container">
@@ -96,18 +83,20 @@
 
 
 
-    <div class="owl-carousel-wrapper">
+    <div class="hero-section">
+      <div class="opacity"></div>
 
-      
+      <div class="hero-container">
+        <div class="title">Aurelia</div>
 
-      <div class="box-92819">
-        <h1 class="text-white mb-3">Join The Movement To end Child Poverty</h1>
-        <p><a href="#" class="btn btn-primary py-3 px-4 rounded-0">Donate Now</a></p>
-        <div>Teachable Machine Image Model</div>
+        
+       </div>
+
+       <!--<div>Teachable Machine</div>
         <button type="button" onclick="init()">Start</button>
         <div id="webcam-container"></div>
-        <div id="label-container"></div>
-       </div>
+        <div id="label-container"></div>-->
+       
 
       <div class="owl-carousel owl-1 ">
         <div class="ftco-cover-1 overlay" style="background-image: url('images/hero_1.jpg');"></div>
@@ -118,31 +107,11 @@
     </div>
     
 
-    <div class="container">
-      <div class="feature-29192-wrap d-md-flex" style="margin-top: -20px; position: relative; z-index: 2;">
-
-        <a href="#" class="feature-29192 overlay-danger" style="background-image: url('images/img_3_gray.jpg');">
-          <div class="text">
-            <span class="meta">Livelihood</span>
-            <h3 class="text-cursive text-white h1">Livelihood</h3>
-          </div>
-        </a>
-
-        <a class="feature-29192 overlay-success" style="background-image: url('images/img_2_gray.jpg');">
-          <div class="text">
-            <span class="meta">Health</span>
-            <h3 class="text-cursive text-white h1">Natural Remedies</h3>
-          </div>
-        </a>
-
-        <div class="feature-29192 overlay-warning" style="background-image: url('images/img_1_gray.jpg');">
-          <div class="text">
-            <span class="meta">School</span>
-            <h3 class="text-cursive text-white h1">New Class Rooms</h3>
-          </div>
-        </div>
-
-      </div>
+    <div class="demo-container">
+      <div class="demo-title">Teachable Machine</div>
+        <button class="d-button" type="button" onclick="init()">Start</button>
+        <div class="webcam"  id="webcam-container"></div>
+        <div class="label" id="label-container"></div>
     </div>
 
     <div class="site-section">
