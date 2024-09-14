@@ -58,6 +58,7 @@
 }
 
 .d-button {
+    margin-left: 810px;
     color: black;
     font-size: large;
     font-weight: bold;
@@ -65,6 +66,8 @@
     position: relative;
     background-color: rgba(0,0,0,0.1);
     border: none;
+    width: 100px;
+
 }
 
 .d-button::before {
@@ -109,7 +112,7 @@
   }
 
 .webcam {
-    margin-left: 750px;
+    margin-left: 650px;
 }
 
   .label {
