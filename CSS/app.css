@@ -3,7 +3,7 @@
     font-weight: 400;
     font-style: normal;
   }
-  
+
 .hero-section {
     width: 100%;
     height: 1000px;
@@ -34,6 +34,7 @@
 .title {
     font-size: 100px;
     font-weight: 800;
+    width: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,19 +47,21 @@
     width: 100%;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
 }
 
 .demo-title {
     font-size: 40px;
     font-weight: 800;
-    margin-left: 750px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     color: rgb(0, 0, 0);
 }
 /**/
 
 .d-button {
-    margin-left: 810px;
     color: black;
     font-size: large;
     font-weight: bold;
@@ -112,7 +115,6 @@
   }
 
 .webcam {
-    margin-left: 650px;
 }
 
   .label {

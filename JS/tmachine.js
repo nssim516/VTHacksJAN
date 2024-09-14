@@ -21,13 +21,13 @@
         // Convenience function to setup a webcam
         const flip = true; // whether to flip the webcam
         webcam = new tmImage.Webcam(200, 200, flip); // width, height, flip
-        webcam.style.borderRadius = 100;
         await webcam.setup(); // request access to the webcam
         await webcam.play();
         window.requestAnimationFrame(loop);
 
         // append elements to the DOM
-        document.getElementById("webcam-container").appendChild(webcam.canvas);
+        webcam2 = document.getElementById("webcam-container").appendChild(webcam.canvas);
+        webcam2.style.borderRadius = 100; 
         labelContainer = document.getElementById("label-container");
         for (let i = 0; i < maxPredictions; i++) { // and class labels
             labelContainer.appendChild(document.createElement("div"));
