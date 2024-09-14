@@ -1,0 +1,164 @@
+
+.hero-section {
+    width: 100%;
+    height: 1000px;
+    background-image: url(../images/bck_img.png);
+    background-size: cover;
+    z-index: -1;
+
+}
+
+.hero-section .opacity{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    z-index: -1;
+}
+
+
+.hero-container {
+    display: flex;
+    position: absolute;
+    top: 500px;
+    margin-left: 600px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+}
+
+.title {
+    font-size: 100px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.demo-container {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.demo-title {
+    font-size: 40px;
+    font-weight: 800;
+    margin-left: 650px;
+    color: rgb(0, 0, 0);
+}
+
+.d-button {
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    transition: all 0.5s;
+    position: relative;
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+}
+
+.d-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.01);
+    transition: all 0.3s;
+  }
+
+  .d-button:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+  }
+
+  .d-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(0,0,0,0.5);
+    transform: scale(1.2,1.2);
+  }
+
+  .d-button:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+    color: #ECB83D;
+  }
+
+  .d-button:hover{
+    background-color: none;
+  }
+
+.webcam {
+    margin-left: 750px;
+}
+
+  .label {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+  }
+
+.new-button{
+  cursor: pointer;
+    color: black;
+    background-color: white;
+    border: none;
+    font-size: large;
+    display: inline-block;
+    position: relative;
+}
+
+.new-button::after {
+    content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.new-button:hover::after {
+    transform: scaleX(1);
+  transform-origin: bottom left;
+  color: #ECB83D;
+
+}
+
+.header-button {
+    background-color: rgb(33, 50, 59);
+    color: white;
+}
+
+.header-button::after {
+    content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
