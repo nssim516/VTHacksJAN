@@ -33,7 +33,7 @@
 .title {
     font-size: 275px;
     font-weight: 800;
-    width: 25vh;
+    width: max-content;
     /* width: 10%; */
     display: flex;
     justify-content: center;
@@ -45,7 +45,7 @@
 
 .demo-container {
     display: flex;
-    height: 400px;
+    height: 600px;
     width: 100%;
     padding-top: 100px;
     flex-direction: column;
