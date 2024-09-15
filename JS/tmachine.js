@@ -2,14 +2,14 @@
     // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
 
     // the link to your model provided by Teachable Machine export panel
-    const URL = "https://teachablemachine.withgoogle.com/models/EPQ7K0mFB/";
+    const URL2 = "https://teachablemachine.withgoogle.com/models/EPQ7K0mFB/";
 
     let model, webcam, labelContainer, maxPredictions;
 
     // Load the image model and setup the webcam
     async function init() {
-        const modelURL = URL + "model.json";
-        const metadataURL = URL + "metadata.json";
+        const modelURL = URL2 + "model.json";
+        const metadataURL = URL2 + "metadata.json";
 
         // load the model and metadata
         // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
@@ -20,14 +20,13 @@
 
         // Convenience function to setup a webcam
         const flip = true; // whether to flip the webcam
-        webcam = new tmImage.Webcam(200, 200, flip); // width, height, flip
+        webcam = new tmImage.Webcam(400, 400, flip); // width, height, flip
         await webcam.setup(); // request access to the webcam
         await webcam.play();
         window.requestAnimationFrame(loop);
 
         // append elements to the DOM
         webcam2 = document.getElementById("webcam-container").appendChild(webcam.canvas);
-        webcam2.style.borderRadius = 100; 
         labelContainer = document.getElementById("label-container");
         for (let i = 0; i < maxPredictions; i++) { // and class labels
             labelContainer.appendChild(document.createElement("div"));
@@ -50,3 +49,9 @@
             labelContainer.childNodes[i].innerHTML = classPrediction;
         }
     }
+
+    const myButton = document.getElementById("label-container");
+
+    function classChange() {
+    myButton.classList.add('label');
+    };
