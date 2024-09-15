@@ -1,8 +1,9 @@
-// More API functions here:
+
+    // More API functions here:
     // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
 
     // the link to your model provided by Teachable Machine export panel
-    const URL = "https://teachablemachine.withgoogle.com/models/EPQ7K0mFB/";
+    const URL = "https://teachablemachine.withgoogle.com/models/s0fsUVOdQ/";
 
     let model, webcam, labelContainer, maxPredictions;
 
@@ -26,8 +27,7 @@
         window.requestAnimationFrame(loop);
 
         // append elements to the DOM
-        webcam2 = document.getElementById("webcam-container").appendChild(webcam.canvas);
-        webcam2.style.borderRadius = 100; 
+        document.getElementById("webcam-container").appendChild(webcam.canvas);
         labelContainer = document.getElementById("label-container");
         for (let i = 0; i < maxPredictions; i++) { // and class labels
             labelContainer.appendChild(document.createElement("div"));
@@ -49,4 +49,4 @@
                 prediction[i].className + ": " + prediction[i].probability.toFixed(2);
             labelContainer.childNodes[i].innerHTML = classPrediction;
         }
-    }
+    };
