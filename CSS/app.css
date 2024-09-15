@@ -33,7 +33,7 @@
 .title {
     font-size: 275px;
     font-weight: 800;
-    width: max-content;
+    width: 30vh;
     /* width: 10%; */
     display: flex;
     justify-content: center;
