@@ -28,8 +28,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
 
-    <script src="../JS/tmachine.js"></script>
-    <script src="../JS/script.js"></script>
+    
 
 
     <!-- MAIN CSS -->
@@ -122,8 +121,9 @@
     
 
     <div class="demo-container">
-      <div class="demo-title">Teachable Machine</div>
-        <button class="d-button" type="button" onclick="init()"  onclick="classChange()"  id="d-button">Start</button>
+      <div class="demo-title">Time</div>
+        <button class="b-button" type="button" onclick="sumFunc()"   id="d-button">Start</button>
+        <button class="d-button hide" type="button" id="oth-button" onclick="stop()">Stop</button>
         <div class="webcam"  id="webcam-container"></div>
         <div id="label-container"></div>
     </div>
@@ -280,7 +280,8 @@
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/aos.js"></script>
-
+    <script src="../JS/tmachine.js"></script>
+    <script src="../JS/script.js"></script>
     <script src="js/main.js"></script>
 
   </body>

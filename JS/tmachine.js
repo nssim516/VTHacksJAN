@@ -1,7 +1,7 @@
 
 
 
-
+    
     // More API functions here:
     // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
 
@@ -53,6 +53,33 @@
             labelContainer.childNodes[i].innerHTML = classPrediction;
         }
     };
+
+    const myButton = document.getElementById("d-button");
+    const othButton = document.getElementById("oth-button");
+
+    function adder() {
+        document.getElementById("label-container").classList.add('label');
+        myButton.classList.add('hide');
+        document.getElementById("oth-button").classList.remove('hide');
+        myButton.classList.add('b-button');
+        myButton.classList.remove('d-button');
+        document.getElementById("webcam-container").classList.remove('hide');
+        document.getElementById("label-container").classList.remove('hide');
+    };
+    function sumFunc () {
+        adder();
+        init();
+    }
+    function stop() {
+        othButton.classList.add('b-button');
+        othButton.classList.remove('d-button');
+        othButton.classList.add('hide');
+        myButton.classList.remove('hide');
+        myButton.classList.add('b-button');
+        document.getElementById("webcam-container").classList.add('hide');
+        document.getElementById("label-container").classList.add('hide');
+    }
+    
 
     
     

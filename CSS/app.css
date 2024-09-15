@@ -28,17 +28,20 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
+    background-color: lightpink;
 
 }
 
 .title {
     font-size: 100px;
     font-weight: 800;
-    width: 100vh;
+    left: 0;
+    width: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: rgb(255, 255, 255);
+    background-color: lightblue;
 }
 
 .demo-container {
@@ -49,20 +52,37 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex: 1;
 
 }
 
 .demo-title {
     font-size: 40px;
     font-weight: 800;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    flex: 1;
+    background-color: lightblue;
     color: rgb(0, 0, 0);
 }
 /**/
 
 .d-button {
+    flex: 1;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    transition: all 0.5s;
+    position: relative;
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    width: 100px;
+
+}
+
+.b-button {
+    cursor: pointer;
     color: black;
     font-size: large;
     font-weight: bold;
@@ -90,6 +110,19 @@
     
   }
 
+  .b-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.01);
+    transition: all 0.3s;
+    
+  }
+
   .d-button:hover::before {
     opacity: 0 ;
     transform: scale(0.5,0.5);
@@ -98,7 +131,32 @@
     border-radius: 2rem;
   }
 
+  .b-button:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+  }
+
   .d-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(0,0,0,0.5);
+    transform: scale(1.2,1.2);
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+  }
+
+  .b-button::after {
     content: '';
     position: absolute;
     top: 0;
@@ -124,7 +182,23 @@
     border-radius: 2rem;
   }
 
+  .b-button:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+    color: #ECB83D;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+  }
+
   .d-button:hover{
+    background-color: none;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+  }
+
+  .b-button:hover{
     background-color: none;
     padding: 1rem;
     width: 8rem;
@@ -133,10 +207,13 @@
 
 .webcam {
     margin-top: 30px;
+    flex: 1;
+    background-color: lightcoral;
 }
 
   .label {
-    font-size: 10px;
+    font-size: 20px;
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,4 +269,8 @@
   background-color: white;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
+}
+
+.hide {
+    display: none;
 }
