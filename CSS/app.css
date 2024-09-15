@@ -224,7 +224,7 @@
 
 .new-button{
   cursor: pointer;
-    color: black;
+    color: #211510;
     background-color: white;
     border: none;
     font-size: large;
@@ -253,7 +253,7 @@
 }
 
 .header-button {
-    background-color: rgb(33, 50, 59);
+    background-color: #211510;
     color: white;
 }
 
