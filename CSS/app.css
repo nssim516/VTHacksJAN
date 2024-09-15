@@ -69,6 +69,9 @@
     position: relative;
     background-color: rgba(0,0,0,0.1);
     border: none;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
     width: 100px;
 
 }
@@ -83,11 +86,15 @@
     z-index: 1;
     background-color: rgba(0,0,0,0.01);
     transition: all 0.3s;
+    
   }
 
   .d-button:hover::before {
     opacity: 0 ;
     transform: scale(0.5,0.5);
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
   }
 
   .d-button::after {
@@ -102,16 +109,25 @@
     transition: all 0.3s;
     border: 1px solid rgba(0,0,0,0.5);
     transform: scale(1.2,1.2);
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
   }
 
   .d-button:hover::after {
     opacity: 1;
     transform: scale(1,1);
     color: #ECB83D;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
   }
 
   .d-button:hover{
     background-color: none;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
   }
 
 .webcam {
