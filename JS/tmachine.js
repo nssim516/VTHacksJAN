@@ -66,7 +66,7 @@
         document.getElementById("webcam-container").classList.remove('hide');
         document.getElementById("label-container").classList.remove('hide');
     };
-    function sumFunc () {
+    function sumFunc() {
         adder();
         init();
     }
