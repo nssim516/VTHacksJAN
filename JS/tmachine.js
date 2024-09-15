@@ -1,8 +1,9 @@
-// More API functions here:
+
+    // More API functions here:
     // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
 
     // the link to your model provided by Teachable Machine export panel
-    const URL = "https://teachablemachine.withgoogle.com/models/EPQ7K0mFB/";
+    const URL = "https://teachablemachine.withgoogle.com/models/s0fsUVOdQ/";
 
     let model, webcam, labelContainer, maxPredictions;
 
@@ -21,7 +22,6 @@
         // Convenience function to setup a webcam
         const flip = true; // whether to flip the webcam
         webcam = new tmImage.Webcam(200, 200, flip); // width, height, flip
-        webcam.style.borderRadius = 100;
         await webcam.setup(); // request access to the webcam
         await webcam.play();
         window.requestAnimationFrame(loop);
@@ -49,4 +49,4 @@
                 prediction[i].className + ": " + prediction[i].probability.toFixed(2);
             labelContainer.childNodes[i].innerHTML = classPrediction;
         }
-    }
+    };
