@@ -10,7 +10,8 @@
     background-image: url(../images/bck_img.png);
     background-size: cover;
     z-index: -1;
-
+    mask-image: linear-gradient(black, transparent);
+    -webkit-mask-image: linear-gradient(black 70%, transparent 100%);
 }
 
 .hero-section .opacity{
