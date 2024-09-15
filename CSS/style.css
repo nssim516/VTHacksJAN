@@ -245,7 +245,7 @@ html {
 
 body {
   line-height: 1.7;
-  color: #702B1F !important;
+  color: #211510 !important;
   font-weight: 300;
   font-size: 1rem;
   background-color: #fff; }
@@ -287,7 +287,7 @@ a {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   font-weight: 300;
-  color: #702B1F;
+  color: #211510;
   font-family: "Overlock", sans-serif; }
 
 .border-2 {
@@ -848,7 +848,7 @@ h1, h2, h3, h4, h5,
       bottom: 0;
       z-index: 1; }
   .site-section-cover.overlay-2:before {
-    background: #702B1F;
+    background: #211510;
     opacity: .9; }
   .site-section-cover.inner-page,
   .site-section-cover.inner-page .container > .row {
@@ -1798,7 +1798,7 @@ h1, h2, h3, h4, h5,
     transform: transalteY(-50%); }
   .heading-20219 .subtitle .title {
     font-size: 3rem;
-    color: #702B1F; }
+    color: #211510; }
 
 .cause {
   margin-bottom: 40px;
